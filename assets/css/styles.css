@@ -1,0 +1,81 @@
+/* styles.css */
+
+* {
+	font-family: "Kedebideri", sans-serif;
+}
+
+body {
+	background-color:rgb(207, 15, 15);
+}
+
+.container {
+	width: 500px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.backgroundImage {
+	background-image: url;
+	width: 400px;
+	height: 400px;
+}
+
+.backgroundImage:hover {
+	background-image:
+	cursor: crosshair;
+}
+
+h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+    font-size: 300px;
+    margin: 0 auto;
+    text-align: left;
+ 
+}
+.top-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #590004;
+    color: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.second-link {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #590004;
+    color: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.third-link {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: #590004;
+    color: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.fourth-link {
+    position: fixed;
+    top: 140px;
+    right: 20px;
+    background-color: #590004;
+    color: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
