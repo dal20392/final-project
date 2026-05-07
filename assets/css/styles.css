@@ -5,7 +5,8 @@
 }
 
 body {
-	background-color:rgb(207, 15, 15);
+    margin: 0;
+   
 }
 
 .container {
@@ -14,10 +15,12 @@ body {
 	text-align: center;
 }
 
-.backgroundImage {
-	background-image: url;
-	width: 400px;
-	height: 400px;
+.background {
+    background-image: url("../img/1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 .backgroundImage:hover {
@@ -25,57 +28,93 @@ body {
 	cursor: crosshair;
 }
 
-h1 {
+.title {
     font-family: "Merriweather Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: <800>;
     font-style: normal;
-    font-size: 300px;
-    margin: 0 auto;
+    font-size: calc(100vh/2.5);
+    background-color: rgb(207, 15, 15);
+    margin: 0px;
+    line-height: 1;
+    max-height: 100vh;
     text-align: left;
+    width: fit-content;
+    overflow-wrap: anywhere;
  
 }
-.top-link {
-    position: fixed;
+.links {
+    position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #590004;
-    color: #000;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
 }
-.second-link {
+
+    .links a {
+        background-color: rgb(207, 15, 15);
+        color: #000;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+    }
+
+    .links a:hover {
+        background-color: rgb(207, 15, 15, 0.75)
+    }
+
+.home {
     position: fixed;
-    top: 60px;
-    right: 20px;
-    background-color: #590004;
-    color: #000;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    bottom: 20px;
+    left: 20px;
+    
 }
-.third-link {
-    position: fixed;
-    top: 100px;
-    right: 20px;
-    background-color: #590004;
-    color: #000;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+
+    .home a {
+        color: #000;
+        text-decoration: none;
+        background-color: #590004;
+        color: #000;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+.home a:hover {
+    background-color: rgb(89, 0, 4, 0.6);
 }
-.fourth-link {
-    position: fixed;
-    top: 140px;
-    right: 20px;
-    background-color: #590004;
-    color: #000;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+
+.content {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+
+.child-page {
+    background-color: rgb(207, 15, 15);
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    align-self: stretch;
+    row-gap: 20px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
